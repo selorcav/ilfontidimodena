@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'Proxima-Nova-Thin'; /*a name to be used later*/
+    src: url('../fonts/Proxima-Nova-Thin.otf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Proxima-Nova-Regular'; /*a name to be used later*/
+    src: url('../fonts/Proxima_nova_reg.ttf'); /*URL to font*/
+}
+@font-face {
+    font-family: 'Proxima-Nova-Bold'; /*a name to be used later*/
+    src: url('../fonts/Proxima-Nova-Bold.otf'); /*URL to font*/
+}
+body{
+	background-image: url(../img/sitio/background-01.svg);
+	background-size: 300px 300px;
+	margin: 0;
+	padding: 0;
+}
+h2, h3{
+	color: white;
+	text-shadow: 1.5px 1.5px #000;
+	font-family: Proxima-Nova-Bold;
+}
+.menu h3:hover{
+	color:#999999;
+}
+.dropdown-item:focus{
+	background-color: #212529;
+	color: white;
+}
+
+h2{
+	font-size: 48px;
+}
+h3{
+	font-size: 24px;
+}
+a:hover{
+	text-decoration: none;
+}
+p{
+	color: white;
+	text-shadow: 1px 1px #000;
+	font-family: Proxima-Nova-Thin;
+	font-size: 24px;
+}
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.bold{
+	font-family: Proxima-Nova-Bold;
+}
+.navbar-dark .navbar-nav .nav-link{
+	color: white;
+}
+.navbar-brand img{
+	height: auto;
+	width: 200px;
+}
+.dropdown-item{
+	background-color: #343a40;
+	color: white;
+	border:none;
+}
+.dropdown-item:hover{
+	background-color: #212529;
+	color: rgba(255,255,255,.75);
+}
+.dropdown-menu{
+	padding: 0;
+}
+.main{
+	background-image: url(../img/sitio/cena.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 66px;
+	height: 100vh;
+	text-align: center;
+	background-position:center;
+}
+.main h2 {
+	padding-top: 20%; 
+}
+.main p{
+	color: white;
+}
+.section {
+	background-color: white;
+	padding:50px 15px 15px 15px;
+	-webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+	box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+}
+.section__title{
+	display: flex;
+	justify-content: center;
+}
+.about_us__img img{
+	width: 100%;
+	height: auto;
+	padding: 5px;
+}
+.about_us__text p{
+	font-family: Proxima-Nova-Regular;
+	box-sizing: border-box;
+	height: auto;
+	font-size: 16px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #343a40;
+	text-shadow: none;
+}
+.bg-dark{
+	transition: 1s;
+}
+.shadow{
+	-webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+	-moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+	box-shadow: 10px 10px 5px -4px rgba(0,0,0,1);
+}
+.absolute{
+	position: absolute;
+	left: -120px;
+	top: 80px;
+}
+/*---------RIBBON--------*/
+.ribbon {
+	margin: 30px 0;
+	padding: 15px;
+	height: 50px;
+	background: #cc1924;
+	clip-path: polygon(100% 0, 95% 50%, 100% 100%, 0% 100%, 5% 50%, 0% 0%);
+	font-family: Proxima-Nova-Bold;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 0.18em;
+	font-size: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50%;
+}
+/*-----FIN RIBBON-----*/
+.menu{
+	background-image: url(../img/sitio/pizza.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 66px;
+	height: 100vh;
+	text-align: center;
+	background-position:center;
+}
+.menu h2 {
+	padding-top: 2%; 
+}
+.menu_platos_icon{
+	padding: 5px;
+}
+.menu_platos_icon img{
+	height: 150px;
+	width: auto;
+}
+.menu_carta{
+	padding: 50px;
+}
+.menu_carta h3, p{
+	text-shadow: none;
+	color: #212529;
+}
+.menu_carta p{
+	font-size: 18px;
+}
+.menu_img img{
+	height: 200px;
+	width: auto;
+}
+.menu_text{
+	padding-top: 4%;
+}
+.customhr {
+	padding: 0.5px;
+    width: 95%;
+    background-color: gray;
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+.reservas{
+	background-image: url(../img/sitio/il_fonti_di_modena_reservas.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 66px;
+	height: 100vh;
+	text-align: center;
+	background-position:center;
+}
+/*SECCION RESERVA*/
+.sectionres .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(47, 103, 177, 0.6);
+}
+
+.booking-form {
+	background-color: #fff;
+	padding: 50px 20px;
+	-webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+	background-color: #ebecee;
+	border-radius: 4px;
+	border: none;
+	height: 40px;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	color: #3e485c;
+	font-size: 14px;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(62, 72, 92, 0.3);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 4px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: rgba(62, 72, 92, 0.3);
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	display: inline-block;
+	color: #3e485c;
+	font-weight: 700;
+	margin-bottom: 6px;
+	margin-left: 7px;
+}
+
+.booking-form .submit-btn {
+	display: inline-block;
+	color: #fff;
+	background-color: #cc1924;
+	font-weight: 700;
+	padding: 14px 30px;
+	border-radius: 4px;
+	border: none;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .submit-btn:hover,
+.booking-form .submit-btn:focus {
+	opacity: 0.9;
+}
+
+.booking-cta {
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+
+.booking-cta h1 {
+	font-size: 52px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+
+.booking-cta p {
+	color: white;
+	font-size: 18px;
+}
+.contact h3{
+	text-shadow: none;
+	color: black;
+}
+.btn-block{
+	background: #cc1924;
+	color: white;
+	font-family: 'Proxima-Nova-Bold';
+}
+
+footer{
+	color: white;
+	margin-top: 10px;
+	padding: 15px 30px ;
+	font-size: 16px;
+	font-family: 'Lato', sans-serif;
+}
+footer p{
+	color: white;
+	font-size: 16px;
+}
+footer a{
+	color: white;
+}
+.icons{
+	font-size: 30px;
+}
+.fa-facebook:hover{
+	color: #8b9dc3;
+}
+.fa-youtube:hover{
+	color: #ff0000;
+}
+.fa-twitter:hover{
+	color:#1dcaff;
+}
+.fa-instagram:hover{
+	color:#bc2a8d;
+}
+.copyright{
+	font-size: 14px;
+	padding-top: 40px;
+}
+@media only screen and (max-width: 991px) {
+	.absolute{
+	display: none;
+	}
+	.about_us__text p{
+		padding: 20px;
+	}
+	.ribbon{
+		font-size: 20px;
+	}
+	.menu_platos_icon img{
+	height: 100px;
+	width: auto;
+	}
+	h3{
+	font-size: 20px;
+	padding: 10px;
+	}
+	.menu{
+		background-size: auto;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.booking-cta {
+	margin-top: 20px;
+	margin-bottom: 10px;
+	}
+	.booking_text{
+		display: none;
+	}
+	.booking-cta h1 {
+	font-size: 30px;
+	}
+	.reservas{
+		padding-top: 20px;
+	}
+	.booking-form{
+		padding: 15px;
+	}
+}
+@media only screen and (max-width: 575px) {
+		.menu_platos_icon img{
+		display: none;
+	}
+	.booking-cta{
+		margin-top: 0;
+	}
+	.reservas{
+		padding-top: 10px;
+	}
+}
+@media only screen and (max-width: 540px) {
+	.ribbon{
+		font-size: 15px;
+	}
+}
