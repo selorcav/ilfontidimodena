@@ -107,3 +107,5 @@ Integrar un plugin con el que Giuilia pueda gestionar las reservas de sus client
 - Todos los archivos mencionados anteriormente deberán ser **versionados vía push en GitHub**, y luego subidos a la [plataforma empieza](http://empieza.desafiolatam.com/)
 
   **¡Vamos con todo!**
+  
+  [Link to site](https://selorcav.github.io/ilfontidimodena/)
